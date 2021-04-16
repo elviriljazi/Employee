@@ -7,14 +7,12 @@ public class Date {
     int month;
     int year;
     int[] months = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    int january = 31;
-
     public Date() {
         this(1, 1, 1900);
     }
 
     public Date(int date, int month, int year) {
-        if (year >= 1990) {
+        if (year >= 1990&& year<=calendar.get(Calendar.YEAR)) {
             this.year = year;
             if(calendar.get(Calendar.YEAR)%4==0)
                 months[1]=29;

@@ -11,14 +11,18 @@ public class Employee {
         this.date = new Date(date,month,year);
     }
     public Employee(){
-        this("","","000000",1,1,1990);
+        this("","","000000",1,1,1900);
     }
     void print(){
         System.out.println("Emri:"+name+"\nMbiemri:"+surname+"\nNVAQ:"+UMCN+"\nDate: "+date.printDate());
     }
 
     public void add(String name, String surname, String UMCN, int date,int month,int year){
-        new Employee(name,surname,UMCN,date,month,year);
+        this.name = name;
+        this.surname = surname;
+        this.UMCN = UMCN;
+        this.date = new Date(date,month,year);
+        this.date = new Date(date,month,year);
     }
 
     public void setName(String name) {
