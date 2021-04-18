@@ -14,6 +14,7 @@ public class Main {
         employees[0].print();
         employees[1].print();
         new1.print();
+        new1.print();
 
 
     }
