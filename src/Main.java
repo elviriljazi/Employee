@@ -15,6 +15,7 @@ public class Main {
         employees[1].print();
         new1.print();
         new1.print();
+        new1.print();
 
 
 
